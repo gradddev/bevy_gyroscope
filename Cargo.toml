@@ -1,0 +1,16 @@
+[package]
+name = "bevy_gyroscope"
+description = "A Bevy plugin that provides gyroscope functionality."
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+license-file = "LICENSE.md"
+readme = "README.md"
+repository = "https://github.com/gradddev/bevy_gyroscope"
+keywords = [ "bevy", "gyroscope","gamedev"]
+authors = ["Alex Grad <git@grad.dev>"]
+
+[dependencies]
+bevy = { version = "0.14.2", default-features = false }
+objc2 = "0.5.2"
+objc2-core-motion = { version = "0.2.2", features = ["CMMotionManager", "CMGyro", "CMLogItem"] }
